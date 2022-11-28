@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Verify Account UI</title>
+
+<link rel="stylesheet" href="verifyAccountUI.css">
+
+<script src="index.js"></script>
+
+</head>
+
+<body>
+
+<div class="full-page">
+
+<div class="container">
+
+<h2>Verify Your Account</h2>
+
+<p>We emailed you the six digit code to cool_guy@email.com <br />
+
+Enter the code below to confirm your email address.</p>
+
+<div class="code-container">
+
+<input type="number" id="box1" class="code" placeholder="0" maxlength="1" onkeyup="onKeyup(event, 'box2')" required autofocus>
+
+<input type="number" id="box2" class="code" placeholder="0" maxlength="1" onkeyup="onKeyup(event,'box3')" required>
+
+<input type="number" id="box3" class="code" placeholder="0" maxlength="1" onkeyup="onKeyup(event,'box4')" required>
+
+<input type="number" id="box4" class="code" placeholder="0" maxlength="1" onkeyup="onKeyup(event,'box5')" required>
+
+<input type="number" id="box5" class="code" placeholder="0" maxlength="1" onkeyup="onKeyup(event,'box6')" required>
+
+<input type="number" id="box6" class="code" placeholder="0" maxlength="1" required>
+
+</div>
+
+<p class="info">
+
+This is design only. We didn't actually send you an email as <br>
+
+we don't have your email, right?
+
+</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
